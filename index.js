@@ -22,11 +22,11 @@ function viewCart() {
   } else {
     var message = "In your cart, you have"
     for (let i = 0; i < cart.length - 1; i++) {
-      var newMessage = ` ${message} ${cart[i]} at $${cart[i]},`
+      var newMessage = ` ${getCart()[i].itemName} at $${getCard()[i].price},`
       var message = newMessage;
     }
   }
-  return `${message} ${item} at $${price}.`
+  return `${getCart()[i].itemName} at $${getCard()[i].price}.`
 }
 
 function total() {
