@@ -30,15 +30,11 @@ function viewCart() {
 }
 
 function total() {
-  if (cart.length === 0) {
-    return 0
-  } else {
-    var subTotal = cart[0].price;
+  var sum = 0;
   for (var i = 0; i < cart.length; i++) {
-    var runningTotal = cart[i].price + subTotal
-    var subTotal = runningTotal;
+    var sum = sum + cart[i].price
   }
-  return subTotal;
+  return sum;
 }
 }
 
