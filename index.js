@@ -36,7 +36,6 @@ function total() {
   }
   return sum;
 }
-}
 
 function removeFromCart(item) {
   // write your code here
