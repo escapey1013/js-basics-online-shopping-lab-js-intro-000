@@ -55,4 +55,3 @@ function placeOrder(cardNumber) {
 }
 cart.splice(0);
 }
-
