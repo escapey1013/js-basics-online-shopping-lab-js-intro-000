@@ -22,7 +22,7 @@ function viewCart() {
   } else {
     var message = "In your cart, you have"
     for (var i = 0; i < (cart.length - 1); i++) {
-      var newMessage = `${message} ${getCart()[i].itemName} at $${getCard()[i].price},`;
+      var newMessage = `${message} ${getCart()[i].itemName} at $${getCart()[i].price},`;
       var message = newMessage;
     }
   }
