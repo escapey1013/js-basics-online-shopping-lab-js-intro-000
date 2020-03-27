@@ -40,14 +40,15 @@ function viewCart() {
 
 function total() {
   if (cart.length === 0) {
-    retrun 0
+    return 0
   } else {
     var subTotal = cart[0].itemPrice;
   for (var i = 0; i < cart.length; i++) {
     var runningTotal = cart[i].itemPrice + subTotal
     var subTotal = runningTotal;
   }
-  // write your code here
+  return subTotal;
+}
 }
 
 function removeFromCart(item) {
