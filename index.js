@@ -21,7 +21,7 @@ function viewCart() {
     return "Your shopping cart is empty.";
   } else {
     var message = "In your cart, you have"
-    for (let i = 0; i < (cart.length - 1); i++) {
+    for (var i = 0; i < (cart.length - 1); i++) {
       var newMessage = `${message} ${getCart()[i].itemName} at $${getCard()[i].price},`;
       var message = newMessage;
     }
