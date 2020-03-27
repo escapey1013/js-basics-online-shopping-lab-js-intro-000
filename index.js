@@ -10,7 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
-  var price = Math.floor(Math.random() * 100) + 1
+  var price = getRandonInt(1, 100);
  var itemObject = { itemName: `${item}`, price: `${price}`};
  cart.push(itemObject);
  return `${item} has been added to your cart.`
@@ -39,4 +39,8 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
