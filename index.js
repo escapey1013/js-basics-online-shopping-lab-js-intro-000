@@ -9,15 +9,17 @@ function setCart(c) {
   return cart;
 }
 
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
 
 function addToCart(item) {
   var price = getRandonInt(1, 100);
  var itemObject = { itemName: `${item}`, price: `${price}`};
  cart.push(itemObject);
- return `${item} has been added to your cart.`
+ return `${item.itemName} has been added to your cart.`
 }
 
 function viewCart() {
