@@ -33,9 +33,9 @@ function total() {
   if (cart.length === 0) {
     return 0
   } else {
-    var subTotal = cart[0].itemPrice;
+    var subTotal = cart[0].price;
   for (var i = 0; i < cart.length; i++) {
-    var runningTotal = cart[i].itemPrice + subTotal
+    var runningTotal = cart[i].price + subTotal
     var subTotal = runningTotal;
   }
   return subTotal;
