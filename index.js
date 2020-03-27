@@ -26,7 +26,7 @@ function viewCart() {
       var message = newMessage;
     }
   }
-  return `${message} ${getCart()[i].itemName} at $${getCard()[i].price}.`
+  return `${message} ${getCart()[i].itemName} at $${getCart()[i].price}.`
 }
 
 function total() {
