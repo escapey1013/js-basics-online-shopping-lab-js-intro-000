@@ -18,15 +18,15 @@ function addToCart(item) {
 
 function viewCart() {
   if (cart.length === 0) {
-    return "Your shopping cart is empty."
+    return "Your shopping cart is empty.";
   } else {
     var message = "In your cart, you have"
     for (let i = 0; i < (cart.length - 1); i++) {
-      var newMessage = ` ${getCart()[i].itemName} at $${getCard()[i].price},`
+      var newMessage = `${message} ${getCart()[i].itemName} at $${getCard()[i].price},`;
       var message = newMessage;
     }
   }
-  return `${getCart()[i].itemName} at $${getCard()[i].price}.`
+  return `${message} ${getCart()[i].itemName} at $${getCard()[i].price}.`
 }
 
 function total() {
