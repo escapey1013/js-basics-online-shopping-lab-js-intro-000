@@ -16,7 +16,9 @@ function getRandomInt(min, max) {
 
 
 function addToCart(item) {
-  var price = Math.floor(Math.random() * 100) + 1;
+  var price = randomInt() {
+    return Math.floor(Math.random() * 100) + 1;
+  }
  var itemObject = { itemName: `${item}`, price: `${price}`};
  cart.push(itemObject);
  return `${item.itemName} has been added to your cart.`
